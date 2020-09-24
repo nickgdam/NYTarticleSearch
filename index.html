@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York times</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-primary" style= "background-color:#A8F4FA;">
+          <h1>New York Times Article Search</h1>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+              <h1 class="panel-title">Search Parameters</h1>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="search">Search Term:</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+              <form role="form">
+                <div class="form-group">
+                  <label for="search">Amount of Articles:</label>
+                  <input type="text" class="form-control" id="numRec">
+                </div>
+              <div class="form-group">
+                <label for="search">Start Year (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+              </div>
+              <div class="form-group">
+                <label for="search">End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+              </div>
+              <button class="btn btn-primary" id="search-btn">Search NYT</button>
+              <button class="btn btn-primary" id="clear-form">Clear Form</button>
+            </form>
+          </div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+              <h1 class="panel-title">Top Articles</h1>
+          </div>
+          <div class="panel-body">
+            <div class="article-list">
+                Articles will appear here.
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+      
+      <script src="./main.js"></script>
+</body>
+</html>
